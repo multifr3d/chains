@@ -990,7 +990,7 @@ ashita.events.register('d3d_present', 'present_cb', function ()
         if (imgui.Begin('chains', true, flags)) then
 
             if render then
-                imgui.SetWindowFontScale(chains.settings.font_scale)
+                --imgui.SetWindowFontScale(chains.settings.font_scale)
 
                 local timediff = now-targetTable[targetId].ts;
                 local timer = targetTable[targetId].dur-timediff;
@@ -1056,7 +1056,7 @@ ashita.events.register('d3d_present', 'present_cb', function ()
                     end
                 end
             elseif chains.visible then
-                imgui.SetWindowFontScale(chains.settings.font_scale)
+                --imgui.SetWindowFontScale(chains.settings.font_scale)
                 imgui.Text('');
                 imgui.Text('                 --- Chains ---                 ');
                 imgui.Text('         Click and drag to move display         ');
